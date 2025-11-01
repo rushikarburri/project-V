@@ -28,16 +28,39 @@
     }
     .button{
         
-        background-color: orangered ;
+        background-color: inherit ;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-radius: 30px 30px;
         border-width: 2px;
         width: 150px;
         height: 50px;
+        border: 2px solid dodgerblue;
 
     }
+    .button:hover{
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+    }
+    .name input{
+        padding: 20px;
+        background-color: inherit;
+        border: 2px solid dodgerblue;
+        border-radius: 30px;
+    }
+    .name input::placeholder{
+        text-align: center;
+    }
+    .input input{
+        padding: 20px;
+        background-color: inherit;
+        border: 2px solid dodgerblue;
+        border-radius: 30px;
 
-    
+    }
+    .input input::placeholder{
+        text-align: center;
+    }
     </style>
 </head>
 <body>
@@ -50,10 +73,15 @@
         <div class="input-field">
     <p><H2 >NAME OF THE BOY: <br>
         
-    <input type="text" placeholder="type your name" required></H2></p><br>
-    <p><h2>NAME OF THE GIRL: <br>
-    <input type="text" placeholder="type your name" required></h2></p>
+    <div class="name">
+        <input type="text" placeholder="Type Your Name" required></H2></p>
     </div>
+    <div class="input-field">
+            <p><h2>NAME OF THE GIRL: <br>
+    </div>
+
+    <div class="input"><input type="text" placeholder="Type Your Name" required></h2></p></div><br><br>
+    
     <button class="button">Confirm!!</button>
     
     </form>
